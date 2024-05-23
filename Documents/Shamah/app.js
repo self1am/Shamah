@@ -33,11 +33,11 @@ var textIndex = 0;
 var texts = [
   'Happy Birthday My Love', // First text
   'You are the reason I live', // Second text
-//   'You are the reason I love',
-//   'To the one who makes me what I am',
-//   'இனம் புரியாத காதலுடன் நான் எழுதும் முதல் கடிதம்...',
-//   'cringe ஆ இருந்தாலும் ஒண்டும் பண்ண ஏலாது',
-//   'You have to read it anyways...'
+  'You are the reason I love',
+  'To the one who makes me what I am',
+  'இனம் புரியாத காதலுடன் நான் எழுதும் முதல் கடிதம்...',
+  'cringe ஆ இருந்தாலும் ஒண்டும் பண்ண ஏலாது',
+  'You have to read it anyways...'
 ];
 var speed = 150; // The speed/duration of the effect in milliseconds
 var delayBetweenTexts = 2000; // Delay between the texts in milliseconds
