@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Pacifico'; */
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+}
+
+img {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.image {
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+}
+
+.ct1 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+    place-self: center;
+    font-size: 3rem;
+    text-align: center;
+    padding-right: 2rem;
+}
+
+#redirectBtn {
+    display: none;
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    font-size: 18px;
+    text-align: center;
+    background-color: #ffcccc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 70%;
+    height: 40%;
+    place-self: center;
+  }
+
+.popup{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-content{
+    background-color: #dd646478;
+    margin: 25% auto 25% auto;
+    padding: 20px;
+    border: 1px solid #333333cd;
+    width: 30%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.popup-content p{
+    color: aliceblue;
+    text-shadow: 1px #333;
+}
+
+button{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn{
+    background-color: #ac4d4dbf;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .image {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+
+    .ct1 {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-height: 50vh;
+    }
+}
